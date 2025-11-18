@@ -5,16 +5,21 @@ let actualYear = actualDate.getFullYear();
 function redirectUserDependsOnAge(userBirthdayYear) {
     
     let userAge = actualYear - userBirthdayYear ;
+
+    console.log(`L'user a "${userAge}" ans`);
     
     // [Documentation] switch statement : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/switch
-    switch (userBirthdayYear) {
-    case ... :
-        console.log("Redirect to https://www.disneyplus.com/");
+    switch (true) {
+    case userAge < 13:
+        console.log("Rediriger vers https://www.disneyplus.com/");
         break;
-    case ... :
-        console.log("Redirect to https://www.netflix.com/");
+    case userAge >= 13 && userAge < 18:
+        console.log("Rediriger vers https://www.netflix.com/");
         break;
     default:
-        console.log("Redirect to https://www.arte.com/");
+        console.log("Rediriger vers https://www.arte.com/");
     }
 }
+
+
+let redirection = redirectUserDependsOnAge(2020);

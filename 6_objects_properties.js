@@ -39,7 +39,7 @@ const productsObjectArray = [
 
 // [Objectif] : Créer une fonction qui permet d'afficher le produit séléctionné
 function displayProduct(productNumber) {
-    return ... ;
+    return productsObjectArray.find((product) => product.id === productNumber);
 }
 
 let selectedProduct = displayProduct(2);

@@ -11,11 +11,12 @@ let imagesArraySize = imagesArray.length;
 // [Objectif] : Afficher l'élément du tableau suivant toutes les 3 secondes
 function displayNextImage() {
     count++;
-    // [Documentation] if statement : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else
-    if ( ... ) {
-        ... ;
+    if(count > imagesArraySize - 1) {
+        count = 0;
     }
-    return ... ;
-}
+    // [Documentation] if statement : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else
+    return imagesArray[count];
+    
+}       
 
 setInterval(displayNextImage, 3000);

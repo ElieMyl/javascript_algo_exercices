@@ -1,6 +1,6 @@
 // [Objectif] : Créer une fonction qui vérifie si un email est bon ou non
 function emailChecker(email) {
-    const regex = ... ;
+    const regex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ ;
     // [Documentation] Regex test method : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test
     return regex.test(email);
 }

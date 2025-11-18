@@ -39,7 +39,9 @@ const products = [
 // [Objectif] : Créer une fonction qui retourne le tableau filtré en fonction d'une recherche
 function filterProduct(objectArray, search) {
     // [Documentation] filter method : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
-    return ... ;
+    return objectArray.filter((product) =>
+        product.name.toLowerCase().includes(search.toLowerCase())
+    );
 }
 
 let filteredProducts = filterProduct(products, 'Clavier');

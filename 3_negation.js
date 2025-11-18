@@ -3,7 +3,7 @@ let lightMode = true;
 
 // [Objectif] Créer une fonction qui permet de passer d'un mode à l'autre
 function switchMode(){
-    return ... ;
+    return !lightMode;
 }
 
 let result = switchMode();

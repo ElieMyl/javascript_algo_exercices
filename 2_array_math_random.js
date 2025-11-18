@@ -19,7 +19,7 @@ console.log("La taille du tableau goodNews est de " + goodNewsSize)
 // [Objectif] : Retourner une phrase aléatoire du tableau goodNews
 function getRandomGoodNews(){
   // [Documentation] method random : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-  let randomNumber = ... ;
+  let randomNumber = Math.floor(Math.random() * goodNewsSize);
   return goodNews[randomNumber];
 }
 
